@@ -1,0 +1,213 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-02T17:27:18.152Z",
+        "line": 20,
+        "name": "Verifying the hotel login details with valid credentials",
+        "description": "",
+        "id": "verifying-the-hotel-details;verifying-the-hotel-login-details-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14462982900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Customer is on Adactin home page",
+            "match": {
+              "location": "LoginPageSteps.customer_is_on_Adactin_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2377586900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Customer logged in with valid \"Balasai31\" and \"navodaya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Balasai31\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"navodaya\"",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginPageSteps.customer_logged_in_with_valid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3609247700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Customer should select hotel by filling \"Sydney\", \"Hotel Sunshine\", \"Double\", \"1\", \"17/12/2020\", \"19/12/2020\", \"2\", \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"Hotel Sunshine\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Double\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"17/12/2020\"",
+                  "offset": 83
+                },
+                {
+                  "val": "\"19/12/2020\"",
+                  "offset": 97
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 111
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 116
+                }
+              ],
+              "location": "LoginPageSteps.customer_should_select_hotel_by_filling(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7575787800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Customer book a hotel by payment with filling \"Karthik\", \"S\", \"Boston\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Karthik\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"S\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"Boston\"",
+                  "offset": 62
+                }
+              ],
+              "location": "LoginPageSteps.customer_book_a_hotel_by_payment_with_filling(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CreditCardNo",
+                  "CreditCardType",
+                  "Month",
+                  "Year",
+                  "CVV"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567887654321",
+                  "VISA",
+                  "July",
+                  "2015",
+                  "099"
+                ]
+              },
+              {
+                "cells": [
+                  "1238495892038482",
+                  "Master Card",
+                  "May",
+                  "2016",
+                  "999"
+                ]
+              },
+              {
+                "cells": [
+                  "1234568998654321",
+                  "Other",
+                  "June",
+                  "2019",
+                  "765"
+                ]
+              },
+              {
+                "cells": [
+                  "1234568998654321",
+                  "Other",
+                  "June",
+                  "2019",
+                  "873"
+                ]
+              },
+              {
+                "cells": [
+                  "2939484811938481",
+                  "American Express",
+                  "June",
+                  "2019",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "1234568998654321",
+                  "Other",
+                  "June",
+                  "2019",
+                  "345"
+                ]
+              },
+              {
+                "cells": [
+                  "1234568998654321",
+                  "American Express",
+                  "May",
+                  "2019",
+                  "431"
+                ]
+              },
+              {
+                "cells": [
+                  "1234568998654321",
+                  "Other",
+                  "June",
+                  "2019",
+                  "987"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying the hotel details",
+    "description": "",
+    "id": "verifying-the-hotel-details",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/LoginPage.feature",
+    "tags": []
+  }
+]
